@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yara Natur Kosmetik – Mainz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" id="closeMenu">×</button>
+  <a href="#leistungen" onclick="closeMobileMenu()">Leistungen</a>
+  <a href="#ueber-uns" onclick="closeMobileMenu()">Über uns</a>
+  <a href="#bewertungen" onclick="closeMobileMenu()">Bewertungen</a>
+  <a href="#kontakt" onclick="closeMobileMenu()">Kontakt</a>
+  <a href="tel:01629026469" class="mobile-menu-cta">01629026469</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo-link">
+    <img src="assets/logo.png" alt="Yara Natur Kosmetik" class="nav-logo-img">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#ueber-uns">Über uns</a></li>
+    <li><a href="#bewertungen">Bewertungen</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a href="tel:01629026469" class="nav-cta">Termin buchen</a>
+  <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Kosmetikstudio · Mainz</p>
+    <h1 class="hero-title">
+      Natürliche<br>
+      <em>Schönheit</em><br>
+      neu erleben
+    </h1>
+    <p class="hero-subtitle">
+      Professionelle Kosmetikbehandlungen mit modernster Technologie — abgestimmt auf Ihre individuelle Haut und Ihre natürliche Ausstrahlung.
+    </p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn-primary">Termin vereinbaren</a>
+      <a href="#leistungen" class="btn-ghost">
+        Unsere Leistungen
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="slider-wrap">
+      <div class="slider-img slider-before">
+        <img
+          src="assets/nachher.png"
+          alt="Vorher – natürliche Augenbrauen"
+          draggable="false"
+        />
+        <span class="slider-label slider-label-before">Vorher</span>
+      </div>
+      <div class="slider-img slider-after" id="sliderAfter">
+        <img
+          src="assets/vorher.jpg"
+          alt="Nachher – perfekte Augenbrauen nach Microblading"
+          draggable="false"
+        />
+        <span class="slider-label slider-label-after">Nachher</span>
+      </div>
+      <div class="slider-divider" id="sliderDivider">
+        <div class="slider-handle" id="sliderHandle">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7 4l-4 6 4 6M13 4l4 6-4 6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="slider-badge">
+        <span class="slider-badge-icon">✦</span>
+        Microblading<br>& PMU
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scrollen</span>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-inner">
+    <span class="strip-item"><span class="strip-dot"></span> Laser Haarentfernung</span>
+    <span class="strip-item"><span class="strip-dot"></span> Biokosmetik</span>
+    <span class="strip-item"><span class="strip-dot"></span> Gesichtsbehandlung</span>
+    <span class="strip-item"><span class="strip-dot"></span> Wimpernverlängerung</span>
+    <span class="strip-item"><span class="strip-dot"></span> PMU & Microblading</span>
+    <span class="strip-item"><span class="strip-dot"></span> Gaustraße 15 · Mainz</span>
+    <span class="strip-item"><span class="strip-dot"></span> Laser Haarentfernung</span>
+    <span class="strip-item"><span class="strip-dot"></span> Biokosmetik</span>
+    <span class="strip-item"><span class="strip-dot"></span> Gesichtsbehandlung</span>
+    <span class="strip-item"><span class="strip-dot"></span> Wimpernverlängerung</span>
+    <span class="strip-item"><span class="strip-dot"></span> PMU & Microblading</span>
+    <span class="strip-item"><span class="strip-dot"></span> Gaustraße 15 · Mainz</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="ueber-uns">
+  <div class="reveal">
+    <p class="about-label">Über uns</p>
+    <h2 class="about-title">Schönheit, die von <em>innen</em> strahlt</h2>
+    <p class="about-text">
+      Yara Natur Kosmetik ist Ihr Kosmetikstudio im Herzen von Mainz. Wir verbinden modernste Behandlungstechnologien mit den Prinzipien der Naturkosmetik — für sichtbare, nachhaltige Ergebnisse, die Ihrer Haut gut tun.
+    </p>
+    <p class="about-text">
+      Jede Behandlung wird individuell auf Ihre Haut, Ihre Wünsche und Ihre natürliche Schönheit abgestimmt. Mit über 30.000 zufriedenen Followerinnen auf Instagram ist Yara Natur Kosmetik eine der bekanntesten Adressen der Region.
+    </p>
+    <div class="about-stats">
+      <div><div class="stat-num">30K+</div><div class="stat-label">Instagram Follower</div></div>
+      <div><div class="stat-num">5</div><div class="stat-label">Behandlungsbereiche</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-label">Zufriedenheit</div></div>
+      <div><div class="stat-num">Mainz</div><div class="stat-label">Gaustraße 15</div></div>
+    </div>
+  </div>
+  <div class="about-visual reveal">
+    <div class="about-box">
+      <img src="assets/logo.png" alt="Yara Natur Kosmetik Logo" class="about-logo">
+    </div>
+    <div class="about-badge">
+      <div class="b-num">★★★★★</div>
+      <div class="b-text">Top<br>Bewertungen</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="leistungen">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Leistungen</p>
+      <h2 class="section-title">Unsere <em>Behandlungen</em></h2>
+    </div>
+    <a href="#kontakt" class="btn-primary" style="flex-shrink:0">Termin buchen</a>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.2">
+        <circle cx="22" cy="22" r="10"/>
+        <path d="M22 4v4M22 36v4M4 22h4M36 22h4M8.5 8.5l2.8 2.8M32.7 32.7l2.8 2.8M8.5 35.5l2.8-2.8M32.7 11.3l2.8-2.8"/>
+      </svg>
+      <h3 class="service-name">Laser Haarentfernung</h3>
+      <p class="service-desc">Modernste 3-Wellen Ice Diodenlaser-Technologie für dauerhaft glattes Ergebnis — sanft, effektiv und für alle Hauttypen geeignet.</p>
+      <span class="service-tag">3 Wellen Ice Diodenlaser</span>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M22 6c8.8 0 16 7.2 16 16S30.8 38 22 38 6 30.8 6 22"/>
+        <path d="M14 22c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8"/>
+        <circle cx="22" cy="22" r="3"/>
+      </svg>
+      <h3 class="service-name">Biokosmetik</h3>
+      <p class="service-desc">Natürliche, zertifizierte Wirkstoffe für Ihre Hautpflege. Nachhaltig, verträglich und wirkungsvoll — Natur pur für Ihr Hautgefühl.</p>
+      <span class="service-tag">Naturkosmetik</span>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.2">
+        <ellipse cx="22" cy="20" rx="12" ry="8"/>
+        <path d="M10 20c0 5 5.4 10 12 10s12-5 12-10"/>
+        <path d="M18 16c0-2.2 1.8-4 4-4s4 1.8 4 4"/>
+      </svg>
+      <h3 class="service-name">Gesichtsbehandlung</h3>
+      <p class="service-desc">Individuelle Gesichtsbehandlungen für jedes Hautbild — Tiefenreinigung, Pflege und Regeneration für sichtbar strahlende Haut.</p>
+      <span class="service-tag">Individuelle Pflege</span>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M8 26c4-6 10-8 14-8s10 2 14 8"/>
+        <path d="M12 22c2-3 5-5 10-5s8 2 10 5"/>
+        <path d="M16 28l-2 6M28 28l2 6"/>
+      </svg>
+      <h3 class="service-name">Wimpernverlängerung</h3>
+      <p class="service-desc">Professionelle Wimpernverlängerung und Brow-Lifting für einen ausdrucksstarken, natürlichen Blick der begeistert.</p>
+      <span class="service-tag">Wimpern & Brows</span>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M12 22c3-4 6-5 10-5s7 1 10 5"/>
+        <path d="M8 28c4-8 8-12 14-12s10 4 14 12"/>
+        <path d="M22 10v4M16 12l2 3M28 12l-2 3"/>
+      </svg>
+      <h3 class="service-name">PMU & Microblading</h3>
+      <p class="service-desc">Permanent Make-Up und präzises Microblading für perfekt geformte, natürlich wirkende Augenbrauen — langanhaltend schön.</p>
+      <span class="service-tag">Permanent Make-Up</span>
+    </div>
+    <div class="service-card service-card-cta">
+      <div class="service-cta-inner">
+        <div class="service-cta-title">Nicht sicher welche <em>Behandlung passt?</em></div>
+        <p class="service-cta-text">Wir beraten Sie kostenlos und persönlich.</p>
+        <a href="tel:01629026469" class="btn-outline-light">Kostenlos beraten</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="reveal">
+    <p class="section-label" style="color:var(--rose-light)">So läuft's ab</p>
+    <h2 class="section-title" style="color:var(--cream)">Ihr Weg zu <em>strahlender Haut</em></h2>
+  </div>
+  <div class="process-steps reveal">
+    <div class="process-step">
+      <div class="step-dot"></div>
+      <div class="step-number">01</div>
+      <h3 class="step-title">Beratung</h3>
+      <p class="step-desc">Wir analysieren Ihre Haut und besprechen Ihre Wünsche — völlig kostenlos und unverbindlich.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-dot"></div>
+      <div class="step-number">02</div>
+      <h3 class="step-title">Planung</h3>
+      <p class="step-desc">Gemeinsam erstellen wir Ihren persönlichen Behandlungsplan, abgestimmt auf Hauttyp und Ziel.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-dot"></div>
+      <div class="step-number">03</div>
+      <h3 class="step-title">Behandlung</h3>
+      <p class="step-desc">In entspannter Atmosphäre führen wir die Behandlung professionell und sorgfältig durch.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-dot"></div>
+      <div class="step-number">04</div>
+      <h3 class="step-title">Nachsorge</h3>
+      <p class="step-desc">Sie erhalten individuelle Pflegetipps und können uns jederzeit bei Fragen kontaktieren.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="bewertungen">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-label">Kundenstimmen</p>
+      <h2 class="section-title">Was unsere <em>Kunden sagen</em></h2>
+    </div>
+  </div>
+  <div class="testimonials-grid reveal">
+    <div class="testimonial-card">
+      <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+      <p class="testimonial-text">„Ich bin so begeistert vom Ergebnis meines Microbladings! Yara ist unglaublich präzise und hat genau das gemacht, was ich mir vorgestellt hatte. Absolut empfehlenswert!"</p>
+      <div class="testimonial-author">Sarah M.</div>
+      <div class="testimonial-service">Microblading</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+      <p class="testimonial-text">„Die Laser-Haarentfernung war angenehmer als erwartet. Nach nur wenigen Sitzungen sehe ich schon tolle Ergebnisse. Das Studio ist sehr sauber und professionell."</p>
+      <div class="testimonial-author">Leila K.</div>
+      <div class="testimonial-service">Laser Haarentfernung</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+      <p class="testimonial-text">„Die Gesichtsbehandlung war einfach traumhaft. Meine Haut strahlt wie lange nicht mehr. Ich komme definitiv wieder — das beste Kosmetikstudio in Mainz!"</p>
+      <div class="testimonial-author">Nina R.</div>
+      <div class="testimonial-service">Gesichtsbehandlung</div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+<div class="booking">
+  <div class="reveal">
+    <h2 class="booking-title">Bereit für Ihre <em>Verwandlung?</em></h2>
+    <p class="booking-sub">Vereinbaren Sie noch heute Ihren Wunschtermin.<br>Wir freuen uns auf Sie — Gaustraße 15, Mainz.</p>
+  </div>
+  <div class="booking-actions reveal">
+    <a href="tel:01629026469" class="btn-primary">Jetzt anrufen</a>
+    <a href="https://wa.me/4916290264690" class="btn-whatsapp" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="kontakt">
+  <div class="reveal">
+    <p class="about-label">Kontakt</p>
+    <h2 class="about-title" style="font-size:2rem;margin-bottom:2.5rem;">Wir sind für Sie <em>da</em></h2>
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      </div>
+      <div>
+        <div class="contact-info-label">Adresse</div>
+        <div class="contact-info-value">Gaustraße 15<br>55116 Mainz</div>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      </div>
+      <div>
+        <div class="contact-info-label">Telefon</div>
+        <div class="contact-info-value"><a href="tel:01629026469">0162 9026469</a></div>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+      </div>
+      <div>
+        <div class="contact-info-label">Instagram</div>
+        <div class="contact-info-value"><a href="https://www.instagram.com/yaranaturkosmetik" target="_blank" rel="noopener">@yaranaturkosmetik</a></div>
+      </div>
+    </div>
+    <div class="contact-info-item">
+      <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <div>
+        <div class="contact-info-label">Öffnungszeiten</div>
+        <div class="contact-info-value">Mo – Fr: 10:00 – 19:00 Uhr<br>Sa: 10:00 – 16:00 Uhr<br>So: Geschlossen</div>
+      </div>
+    </div>
+  </div>
+  <div class="reveal">
+    <h3 class="contact-form-title">Termin <em>anfragen</em></h3>
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Vorname</label>
+          <input type="text" id="fname" placeholder="Ihr Vorname" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Nachname</label>
+          <input type="text" id="lname" placeholder="Ihr Nachname" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" placeholder="ihre@email.de" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefon</label>
+        <input type="tel" id="phone" placeholder="Ihre Telefonnummer">
+      </div>
+      <div class="form-group">
+        <label for="service">Gewünschte Behandlung</label>
+        <select id="service">
+          <option value="">Bitte wählen...</option>
+          <option>Laser Haarentfernung</option>
+          <option>Biokosmetik / Gesichtsbehandlung</option>
+          <option>Wimpernverlängerung / Brow Lift</option>
+          <option>PMU & Microblading</option>
+          <option>Beratungsgespräch</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Nachricht (optional)</label>
+        <textarea id="message" placeholder="Ihre Wünsche oder Fragen..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Anfrage senden</button>
+      <p class="form-note">Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Yara Natur Kosmetik" class="footer-logo-img">
+      </div>
+      <p class="footer-tagline">Ihr Premium-Kosmetikstudio in Mainz für natürliche Schönheit mit modernster Technologie.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Leistungen</div>
+      <ul class="footer-col-links">
+        <li><a href="#leistungen">Laser Haarentfernung</a></li>
+        <li><a href="#leistungen">Biokosmetik</a></li>
+        <li><a href="#leistungen">Gesichtsbehandlung</a></li>
+        <li><a href="#leistungen">Wimpernverlängerung</a></li>
+        <li><a href="#leistungen">PMU & Microblading</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Kontakt</div>
+      <ul class="footer-col-links">
+        <li><a href="#kontakt">Gaustraße 15, Mainz</a></li>
+        <li><a href="tel:01629026469">0162 9026469</a></li>
+        <li><a href="https://www.instagram.com/yaranaturkosmetik" target="_blank">Instagram</a></li>
+        <li><a href="#kontakt">Termin anfragen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Yara Natur Kosmetik · Alle Rechte vorbehalten</div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/yaranaturkosmetik" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@yaranaturkosmetik" target="_blank" rel="noopener">TikTok</a>
+      <a href="#kontakt">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
